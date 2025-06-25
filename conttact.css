@@ -1,0 +1,480 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+ .header #menu{
+    display: none;
+ }
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(241, 239, 239);
+    padding: 0 50px;
+    height: 70px;
+    align-items: center;
+
+}
+.header h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.header a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+a:hover{
+    color: blue;
+    text-decoration: underline;
+    transform: scale(1.3);
+}
+.header button{
+    background: blue;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: none;
+}
+.header button a{
+    color: rgb(159, 150, 150);
+}
+.header button a:hover{
+    color: white;
+}
+
+
+/* section2 */
+.box2{
+    width: 100%;
+    height: 300px;
+    background-image: url(istockphoto-1083487948-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  left;
+    color: white;
+   
+
+}
+.box2 .b1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7),  rgba(0,0,0,0.7)) ;
+}
+.box2 .b1 h1{
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+/* section3 */
+.box3{
+    display: flex;
+    padding: 80px;
+    gap: 70px;
+}
+.box21{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 300px;
+    width: 400px;
+    padding: 30px 0 30px 0;
+    border-radius: 10px;
+    background-color: rgb(241, 239, 239);
+    
+   animation: desert 1s  ;
+   animation-timeline: view();
+
+}
+.box21 .b1{
+        padding-top: 50px;
+
+}
+@keyframes desert{
+    0%{transform: scale(0.5);}
+    45%{transform: scale(0.9);}
+    50%{
+        transform: scale(1);
+    }
+    100%{transform: scale(1);}
+}
+
+/* section3 */
+
+
+
+.box42{
+    background-image: url(bakery-food-sketch-print-illustration-white-background_331161-170.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.box412{
+    width: 100%;
+    display: flex;
+
+    justify-content: center; 
+    background: linear-gradient(to top, rgba(0,190,0,0.9),rgba(0,190,0,0.9));
+    
+
+}
+.box42 .b12{
+    font-size: 1,4em;
+    font-weight: bold;
+       animation: box3 1s  ;
+   animation-timeline: view(90% auto);
+}
+.box42 .b22{
+       animation: box312 1s  ;
+   animation-timeline: view(70% auto); 
+}
+@keyframes box3{
+    from {
+        transform: translateX(-600px);
+    }
+    to{
+        transform: translateX(0);
+
+    }
+}
+@keyframes box312{
+    from {
+        transform: translateX(600px);
+    }
+    to{
+        transform: translateX(0);
+
+    }
+}
+
+
+
+/* lastsection */
+.sec8 .box{
+    display: flex;
+    justify-content: space-between;
+
+}
+.sec8 .box .b{ 
+    width: 180px;
+}
+.sec8{
+    margin-top: 30px;
+    background-color: rgb(241, 239, 239);
+    padding: 120px 5%;
+    border-radius: 10px;
+
+}
+.sec8 .box   li{ 
+    margin-bottom: 15px;
+}   
+.sec8 .box  h1{
+    font-weight: 100;
+    font-size: 1.4em;
+}
+.sec8 .box  li{
+    list-style: none;
+}
+
+.sec8 i{
+    margin-right:10px;
+}
+
+
+/* samsung responsive */
+@media (min-width: 0) and (max-width: 410px) {
+    body{
+        overflow: hidden;
+    }
+     .nav {
+        display: none;
+    }
+    .header #menu{
+        display: block;
+        font-size: 2.6em;
+        font-weight: 900;
+        position: relative;
+        margin-right: -190px;
+
+    }
+    #menu .nav2 a{
+        color: #000;
+        
+        margin-right: 50px;
+        font-size: 0.5em;
+    }
+      #menu .nav2 a:hover{
+        color: blue;
+      }
+     #menu .nav2{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 175px;
+
+        margin-left: -130px;
+        text-align: center;
+        align-items: center;
+        margin-left: -90px;
+        z-index: 1;
+        text-align: left;
+        padding-left: 10px;
+        border-radius: 10px;
+        display: none;
+        background-color: rgb(241, 239, 239);
+
+     }
+     #menu:hover .nav2{
+        display: block;
+    }
+   
+    .header button{
+    
+        display: none;
+    }
+ 
+
+    /* section3 */
+
+     .box3 {
+        flex-direction: column;
+        gap: -20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .box21{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 300px;
+    width: 340px;
+    padding: 30px 0 30px 0;
+    border-radius: 10px;
+    background-color: rgb(241, 239, 239);
+    
+   animation: desert 1s  ;
+   animation-timeline: view();
+
+}
+/* section4 delivery */
+     .box412{
+        text-align: center;
+
+        gap: 10px;
+
+        padding: 0 20px;
+        flex-direction: column;
+        
+    }
+    .box412 .b12 {
+        font-size: 0.8em;
+    }
+    .box412 .b22{
+        /* margin-top: 10px; */
+        margin-left: -360px;
+    }
+      .box{
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+}
+
+/* iphone responsive */
+
+@media (min-width: 410px) and (max-width: 600px) {
+    body{
+        overflow: hidden;
+    }
+     .nav {
+        display: none;
+    }
+    .header #menu{
+        display: block;
+        font-size: 2.6em;
+        font-weight: 900;
+        position: relative;
+        margin-right: -229px;
+
+    }
+    #menu .nav2 a{
+        color: #000;
+        
+        margin-right: 50px;
+        font-size: 0.5em;
+    }
+      #menu .nav2 a:hover{
+        color: blue;
+      }
+     #menu .nav2{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 175px;
+
+        margin-left: -130px;
+        text-align: center;
+        align-items: center;
+        margin-left: -90px;
+        z-index: 1;
+        text-align: left;
+        padding-left: 10px;
+        border-radius: 10px;
+        display: none;
+        background-color: rgb(241, 239, 239);
+
+     }
+     #menu:hover .nav2{
+        display: block;
+    }
+   
+    .header button{
+    
+        display: none;
+    }
+   
+
+    
+    /* section3 */
+
+     .box3 {
+        flex-direction: column;
+        gap: -20px;
+        padding: 20px;
+    }
+    .box21{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 300px;
+    width: 390px;
+    padding: 30px 0 30px 0;
+    border-radius: 10px;
+    background-color: rgb(241, 239, 239);
+    
+   animation: desert 1s  ;
+   animation-timeline: view();
+
+}
+/* section4 delivery */
+     .box412{
+        text-align: center;
+
+        gap: 10px;
+
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    .box412 .b12 {
+        font-size: 0.8em;
+    }
+    .box412 .b22{
+        margin-top: 10px;
+        margin-left: -340px;
+    }
+      .box{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+}
+
+/* ipad responsive */
+@media (min-width: 760px) and (max-width: 900px) {
+    body{
+        overflow: hidden;
+    }
+
+    /* section1 */
+      .header #menu{
+        display: none;
+        font-size: 2.6em;
+        font-weight: 900;
+        position: relative;
+        margin-right: -229px;
+      }
+
+      /* section3 */
+      .box3 {
+
+        flex-wrap: wrap;       
+    }
+        .box21{
+    margin-top: 5px;
+    margin-left: 90px;
+    display: flex;
+    
+    flex-direction: column;
+    text-align: center;
+    height: 300px;
+    width: 490px;
+    
+    border-radius: 10px;
+    background-color: rgb(241, 239, 239);
+    
+   animation: desert 1s  ;
+   animation-timeline: view();
+
+ }
+ /* delivery section  */
+     .box412{
+        text-align: center;
+        padding: 0 50px;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .box412 .b12 {
+        font-size: 1em;
+    }
+    .box412 .b22{
+        margin-top: 10px;
+        margin-left: -230px;
+    }
+
+    /* last section  */
+      .box{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+}

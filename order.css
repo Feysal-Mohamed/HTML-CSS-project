@@ -1,0 +1,512 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+ .header #menu{
+    display: none;
+ }
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(241, 239, 239);
+    padding: 0 50px;
+    height: 70px;
+    align-items: center;
+
+}
+.header h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.header a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+a:hover{
+    color: blue;
+    text-decoration: underline;
+    transform: scale(1.3);
+}
+.header button{
+    background: blue;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: none;
+}
+.header button a{
+    color: rgb(159, 150, 150);
+}
+.header button a:hover{
+    color: white;
+}
+
+
+/* sectio2 */
+.box2{
+    width: 100%;
+    height: 300px;
+    background-image: url(delicious-pizza-studio_23-2151846559.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+   
+
+}
+.box2 .b1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7),  rgba(0,0,0,0.7)) ;
+}
+.box2 .b1 h1{
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+/* section3 */
+.box3{
+
+    padding: 110px;
+    display: flex;
+    gap: 30px;
+}
+.box31{
+    padding: 10px 10px 40px 10px;
+    border-radius: 10px;
+
+    background-color: rgb(241, 239, 239);
+    font-weight: bold;
+   
+
+}
+.box31 .b1{
+    display: flex;
+    
+    flex-direction: column;
+   
+}
+.box31 .b1 .b12{
+    margin-left: -4px;
+}
+
+
+#box31{
+        animation: box3 1s  ;
+   animation-timeline: view(90% auto);
+}
+.box31{
+     animation: trax 1s  ;
+   animation-timeline: view(90% auto);
+}
+.box31:hover{
+    background: orange;
+}
+.box31:hover .b1 i{
+    color: white;
+}
+.box31 i{
+    font-size: 1.5em;
+    padding: 10px 0 0 10px;
+}
+ .box3 .b1{
+    
+    align-items: center;
+    text-align: center;
+}
+ .box3 .b1 h1{
+    font-size: 1.5em;
+
+ }
+ .box31 .b12{
+    margin: 20px 0;
+    gap: 10px;
+    font-size: 1.3em;
+    margin-left: 60px;
+    display: flex;
+ }
+ .box31 .b1 i{
+    color: orange;
+ }
+#color{
+        background: orange;
+
+}
+#color i{
+        color: white;
+
+}
+#box312{
+     animation: box312 1s  ;
+   animation-timeline: view(90% auto); 
+}
+
+@keyframes trax{
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes box3{
+    from {
+        transform: translateX(-600px);
+    }
+    to{
+        transform: translateX(0);
+
+    }
+}
+@keyframes box312{
+    from {
+        transform: translateX(600px);
+    }
+    to{
+        transform: translateX(0);
+
+    }
+}/* section3 */
+
+
+
+.box42{
+    background-image: url(bakery-food-sketch-print-illustration-white-background_331161-170.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.box412{
+    width: 100%;
+    display: flex;
+
+    justify-content: center; 
+    background: linear-gradient(to top, rgba(0,190,0,0.9),rgba(0,190,0,0.9));
+    
+
+}
+.box42 .b12{
+    font-size: 1,4em;
+    font-weight: bold;
+       animation: box3 1s  ;
+   animation-timeline: view(90% auto);
+}
+.box42 .b22{
+       animation: box312 1s  ;
+   animation-timeline: view(70% auto); 
+}
+@keyframes box3{
+    from {
+        transform: translateX(-600px);
+    }
+    to{
+        transform: translateX(0);
+
+    }
+}
+@keyframes box312{
+    from {
+        transform: translateX(600px);
+    }
+    to{
+        transform: translateX(0);
+
+    }
+}
+
+/* lastsection */
+.sec8 .box{
+    display: flex;
+    justify-content: space-between;
+
+}
+.sec8 .box .b{ 
+    width: 180px;
+}
+.sec8{
+    margin-top: 30px;
+    background-color: rgb(241, 239, 239);
+    padding: 120px 5%;
+    border-radius: 10px;
+
+}
+.sec8 .box   li{ 
+    margin-bottom: 15px;
+}   
+.sec8 .box  h1{
+    font-weight: 100;
+    font-size: 1.4em;
+}
+.sec8 .box  li{
+    list-style: none;
+}
+
+.sec8 i{
+    margin-right:10px;
+}
+
+
+/* responsive for mobiles */
+
+/* samsung responsive */
+@media (min-width: 0) and (max-width: 410px) {
+    body{
+        overflow: hidden;
+    }
+     .nav {
+        display: none;
+    }
+    .header #menu{
+        display: block;
+        font-size: 2.6em;
+        font-weight: 900;
+        position: relative;
+        margin-right: -190px;
+
+    }
+    #menu .nav2 a{
+        color: #000;
+        
+        margin-right: 50px;
+        font-size: 0.5em;
+    }
+      #menu .nav2 a:hover{
+        color: blue;
+      }
+     #menu .nav2{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 175px;
+
+        margin-left: -130px;
+        text-align: center;
+        align-items: center;
+        margin-left: -90px;
+        z-index: 1;
+        text-align: left;
+        padding-left: 10px;
+        border-radius: 10px;
+        display: none;
+        background-color: rgb(241, 239, 239);
+
+     }
+     #menu:hover .nav2{
+        display: block;
+    }
+   
+    .header button{
+    
+        display: none;
+    }
+    /* section3 */
+    .box3{
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    /* secton deliver */
+     .box412{
+        text-align: center;
+
+        gap: 10px;
+
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    .box412 .b12 {
+        font-size: 0.8em;
+    }
+    .box412 .b22{
+        margin-top: 10px;
+        margin-left: -480px;
+    }
+      .box{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+}
+
+
+
+/* iphone responsive */
+
+@media (min-width: 410px) and (max-width: 600px) {
+    body{
+        overflow: hidden;
+    }
+    .nav {
+        display: none;
+    }
+    .header #menu{
+        display: block;
+        font-size: 2.6em;
+        font-weight: 900;
+        position: relative;
+        margin-right: -229px;
+
+    }
+    #menu .nav2 a{
+        color: #000;
+        
+        margin-right: 50px;
+        font-size: 0.5em;
+    }
+      #menu .nav2 a:hover{
+        color: blue;
+      }
+     #menu .nav2{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 175px;
+
+        margin-left: -130px;
+        text-align: center;
+        align-items: center;
+        margin-left: -90px;
+        z-index: 1;
+        text-align: left;
+        padding-left: 10px;
+        border-radius: 10px;
+        display: none;
+        background-color: rgb(241, 239, 239);
+
+     }
+     #menu:hover .nav2{
+        display: block;
+    }
+   
+    .header button{
+    
+        display: none;
+    }
+        /* section3 */
+    .box3{
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    /* secton deliver */
+     .box412{
+        text-align: center;
+
+        gap: 10px;
+
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    .box412 .b12 {
+        font-size: 0.8em;
+    }
+    .box412 .b22{
+        margin-top: 10px;
+        margin-left: -480px;
+    }
+      .box{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+   
+    
+
+}
+
+
+/* ipad responsive */
+@media (min-width: 760px) and (max-width: 900px) {
+    body{
+        overflow: hidden;
+    }
+
+    /* section1 */
+      .header #menu{
+        display: none;
+        font-size: 2.6em;
+        font-weight: 900;
+        position: relative;
+        margin-right: -229px;
+      }
+      /* section2 */
+       .box3{
+        flex-direction: column;
+        padding: 12%;
+    }
+ 
+     .box31 .b1{
+           text-align: center;
+        align-items: center;
+        padding: 100px;
+
+      }
+
+
+     /* delivery section  */
+     .box412{
+        text-align: center;
+        /* padding: 0 50px; */
+        gap: 10px;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .box412 .b12 {
+        font-size: 1em;
+    }
+    .box412 .b22{
+        margin-top: 10px;
+        margin-left: -660px;
+    }
+   
+    /* last section  */
+      .box{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    
+    }
+    
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    }
+
+
+
+
