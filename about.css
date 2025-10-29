@@ -1,13 +1,14 @@
-*{
+* {
     padding: 0;
     margin: 0;
 
 }
 
- .header #menu{
+.header #menu {
     display: none;
- }
-.header{
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     background-color: rgb(241, 239, 239);
@@ -16,88 +17,101 @@
     align-items: center;
 
 }
-.header h1{
+
+.header h1 {
     font-size: 3em;
     font-weight: bold;
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
-.header a{
+
+.header a {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 600;
 }
 
-a:hover{
+a:hover {
     color: blue;
     text-decoration: underline;
     transform: scale(1.3);
 }
-.header button{
+
+.header button {
     background: blue;
     padding: 10px 40px;
     border-radius: 50px;
     border: none;
 }
-.header button a{
+
+.header button a {
     color: rgb(159, 150, 150);
 }
-.header button a:hover{
+
+.header button a:hover {
     color: white;
 }
 
 
 /* section2 */
-.box2{
+.box2 {
     width: 100%;
     height: 600px;
     background-image: url(istockphoto-1083487948-612x612.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:  left;
+    background-position: left;
     color: white;
-   
+
 
 }
-.box2 .b1{
+
+.box2 .b1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     height: 600px;
-    background: linear-gradient(to top, rgba(0,0,0,0.7),  rgba(0,0,0,0.7)) ;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
-.box2 .b1 h1{
+
+.box2 .b1 h1 {
     font-size: 2em;
     font-weight: bold;
 
 }
-.box3  .b1 img{
-       animation: box3 1s  ;
-   animation-timeline: view(90% auto);
+
+.box3 .b1 img {
+    animation: box3 1s;
+    animation-timeline: view(90% auto);
 }
 
-.box3 .b2{
-       animation: box312 1s  ;
-   animation-timeline: view(90% auto); 
+.box3 .b2 {
+    animation: box312 1s;
+    animation-timeline: view(90% auto);
 }
-@keyframes box3{
+
+@keyframes box3 {
     from {
         transform: translateX(-600px);
     }
-    to{
+
+    to {
         transform: translateX(0);
 
     }
 }
-@keyframes box312{
+
+@keyframes box312 {
     from {
         transform: translateX(600px);
     }
-    to{
+
+    to {
         transform: translateX(0);
 
     }
@@ -105,38 +119,46 @@ a:hover{
 
 /* section3 */
 
-.box3{
+.box3 {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-.div h1{
+
+.div h1 {
     font-size: 2em;
     font-weight: bold;
-    color:orangered;
+    color: orangered;
 }
-.div2{
+
+.div2 {
     margin: 20px 0 30px 0;
 }
-.div i{
+
+.div i {
     font-size: 4em;
     margin-right: 10px;
     margin-top: 20px;
     color: red;
 }
-.div p{
+
+.div p {
     font-size: 1em;
     font-weight: bold;
 }
-.div2 p{
+
+.div2 p {
     font-size: 1em;
-    font-weight: bold;}
-.div2{
+    font-weight: bold;
+}
+
+.div2 {
     display: flex;
     gap: 30px;
     margin-top: 30px;
 }
-.div2 button{
+
+.div2 button {
     padding: 10px 80px;
     background-color: green;
     border-radius: 10px;
@@ -145,113 +167,144 @@ a:hover{
 }
 
 /* section4 */
-.B41{
+.B41 {
 
     /* margin-top: 40%; */
-   animation: desert 1s  ;
-   animation-timeline: view();
+    animation: desert 1s;
+    animation-timeline: view();
 }
 
-.box4{
+.box4 {
     display: flex;
     text-align: center;
     gap: 30px;
-    padding: 20px 110px ;
+    padding: 20px 110px;
     margin-top: 30px;
 }
-.box4 .B41{
+
+.box4 .B41 {
     display: flex;
-    padding: 20px 30px ;
+    padding: 20px 30px;
     width: 300px;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
 }
-.box4 .B41:hover{
+
+.box4 .B41:hover {
     background-color: rgb(241, 239, 239);
 }
-@keyframes desert{
-    0%{transform: scale(0.5);}
-    45%{transform: scale(0.9);}
-    50%{
+
+@keyframes desert {
+    0% {
+        transform: scale(0.5);
+    }
+
+    45% {
+        transform: scale(0.9);
+    }
+
+    50% {
         transform: scale(1);
     }
-    100%{transform: scale(1);}
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* SECTION5 */
-.box5{
+.box5 {
     padding: 20PX 15%;
 }
-.b511{
+
+.b511 {
     padding: 20px;
     border-radius: 10px;
     border: 3px solid green;
 
 }
-.box51{
+
+.box51 {
     gap: 70px;
     display: flex;
     text-align: center;
 }
-.box51 img{
+
+.box51 img {
     width: 300px;
     border-radius: 10px;
-      animation: desert 1s  ;
-   animation-timeline: view();
+    animation: desert 1s;
+    animation-timeline: view();
 }
 
-@keyframes desert{
-    0%{transform: scale(0.5);}
-    45%{transform: scale(0.9);}
-    50%{
+@keyframes desert {
+    0% {
+        transform: scale(0.5);
+    }
+
+    45% {
+        transform: scale(0.9);
+    }
+
+    50% {
         transform: scale(1);
     }
-    100%{transform: scale(1);}
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* section6 */
 
 
-.box42{
+.box42 {
     background-image: url(bakery-food-sketch-print-illustration-white-background_331161-170.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
 }
-.box412{
+
+.box412 {
     width: 100%;
     display: flex;
 
-    justify-content: center; 
-    background: linear-gradient(to top, rgba(0,190,0,0.9),rgba(0,190,0,0.9));
-    
+    justify-content: center;
+    background: linear-gradient(to top, rgba(0, 190, 0, 0.9), rgba(0, 190, 0, 0.9));
+
 
 }
-.box42 .b12{
-    font-size: 1,4em;
+
+.box42 .b12 {
+    font-size: 1, 4em;
     font-weight: bold;
-       animation: box3 1s  ;
-   animation-timeline: view(90% auto);
+    animation: box3 1s;
+    animation-timeline: view(90% auto);
 }
-.box42 .b22{
-       animation: box312 1s  ;
-   animation-timeline: view(70% auto); 
+
+.box42 .b22 {
+    animation: box312 1s;
+    animation-timeline: view(70% auto);
 }
-@keyframes box3{
+
+@keyframes box3 {
     from {
         transform: translateX(-600px);
     }
-    to{
+
+    to {
         transform: translateX(0);
 
     }
 }
-@keyframes box312{
+
+@keyframes box312 {
     from {
         transform: translateX(600px);
     }
-    to{
+
+    to {
         transform: translateX(0);
 
     }
@@ -259,34 +312,39 @@ a:hover{
 
 
 /* lastsection */
-.sec8 .box{
+.sec8 .box {
     display: flex;
     justify-content: space-between;
 
 }
-.sec8 .box .b{ 
+
+.sec8 .box .b {
     width: 180px;
 }
-.sec8{
+
+.sec8 {
     margin-top: 30px;
     background-color: rgb(241, 239, 239);
     padding: 120px 5%;
     border-radius: 10px;
 
 }
-.sec8 .box   li{ 
+
+.sec8 .box li {
     margin-bottom: 15px;
-}   
-.sec8 .box  h1{
+}
+
+.sec8 .box h1 {
     font-weight: 100;
     font-size: 1.4em;
 }
-.sec8 .box  li{
+
+.sec8 .box li {
     list-style: none;
 }
 
-.sec8 i{
-    margin-right:10px;
+.sec8 i {
+    margin-right: 10px;
 }
 
 
@@ -294,13 +352,15 @@ a:hover{
 
 /* samsung responsive */
 @media (min-width: 0) and (max-width: 410px) {
-    body{
+    body {
         overflow-x: hidden;
     }
-     .nav {
+
+    .nav {
         display: none;
     }
-    .header #menu{
+
+    .header #menu {
         display: block;
         font-size: 2.6em;
         font-weight: 900;
@@ -308,16 +368,19 @@ a:hover{
         margin-right: -190px;
 
     }
-    #menu .nav2 a{
+
+    #menu .nav2 a {
         color: #000;
-        
+
         margin-right: 50px;
         font-size: 0.5em;
     }
-      #menu .nav2 a:hover{
+
+    #menu .nav2 a:hover {
         color: blue;
-      }
-     #menu .nav2{
+    }
+
+    #menu .nav2 {
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -334,44 +397,48 @@ a:hover{
         display: none;
         background-color: rgb(241, 239, 239);
 
-     }
-     #menu:hover .nav2{
+    }
+
+    #menu:hover .nav2 {
         display: block;
     }
-   
-    .header button{
-    
+
+    .header button {
+
         display: none;
     }
 
-    
+
     /* section3 */
-    .box3{
+    .box3 {
         display: flex;
         padding: 0 20px;
-        
+
         justify-items: center;
 
         flex-direction: column;
     }
-    
-    
-    .b2 #b1{
-        width: 300px;
+
+
+    .box3 .b2 #b1 {
+        width: 200px;
     }
-    .div{
+
+    .div {
         flex-direction: column;
         gap: 10px;
     }
-    .div p{
+
+    .div p {
         width: 250px;
     }
-    .div2{
+
+    .div2 {
         flex-direction: column;
     }
 
     /* section4 */
-    .box4{
+    .box4 {
         flex-direction: column;
         gap: 10px;
         margin-left: -80px;
@@ -379,24 +446,27 @@ a:hover{
 
     /* section5 */
 
-    .box51{
+    .box51 {
         padding: 0;
         flex-direction: column;
     }
-    .box5{
+
+    .box5 {
         padding: 30px;
     }
-    .box5 .b51{
+
+    .box5 .b51 {
         margin-left: -180px;
     }
-    .box5 .button{
+
+    .box5 .button {
 
         width: 300px;
 
     }
 
     /* section6 */
-    .box412{
+    .box412 {
         text-align: center;
 
         gap: 10px;
@@ -404,10 +474,12 @@ a:hover{
         padding: 0 20px;
         flex-direction: column;
     }
+
     .box412 .b12 {
         font-size: 0.8em;
     }
-    .box412 .b22{
+
+    .box412 .b22 {
         margin-top: 10px;
         margin-left: -400px;
     }
@@ -415,14 +487,14 @@ a:hover{
 
 
     /* last box  */
-      .box{
+    .box {
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
         align-items: center;
     }
-    
-    .box{
+
+    .box {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -437,13 +509,15 @@ a:hover{
 /* iphone responsive */
 
 @media (min-width: 410px) and (max-width: 600px) {
-    body{
+    body {
         overflow-x: hidden;
     }
+
     .nav {
         display: none;
     }
-    .header #menu{
+
+    .header #menu {
         display: block;
         font-size: 2.6em;
         font-weight: 900;
@@ -451,16 +525,19 @@ a:hover{
         margin-right: -229px;
 
     }
-    #menu .nav2 a{
+
+    #menu .nav2 a {
         color: #000;
-        
+
         margin-right: 50px;
         font-size: 0.5em;
     }
-      #menu .nav2 a:hover{
+
+    #menu .nav2 a:hover {
         color: blue;
-      }
-     #menu .nav2{
+    }
+
+    #menu .nav2 {
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -477,73 +554,83 @@ a:hover{
         display: none;
         background-color: rgb(241, 239, 239);
 
-     }
-     #menu:hover .nav2{
+    }
+
+    #menu:hover .nav2 {
         display: block;
     }
-   
-    .header button{
-    
+
+    .header button {
+
         display: none;
     }
-      /* section3 */
-    .box3{
+
+    /* section3 */
+    .box3 {
         display: flex;
         padding: 0 20px;
         flex-direction: column;
     }
-    
-   
-    .b2 #b1{
-        width: 300px;
+
+
+    .box3 .b2 #b1 {
+        width: 200px;
     }
-    .div{
+
+    .div {
         flex-direction: column;
         gap: 10px;
     }
-    .div p{
+
+    .div p {
         width: 250px;
     }
-    .div2{
+
+    .div2 {
         flex-direction: column;
     }
 
     /* section4 */
-    .box4{
+    .box4 {
         flex-direction: column;
         gap: 10px;
-        margin-left: -45px;
+        justify-content: center;
     }
 
     /* section5 */
 
-    .box51{
+    .box51 {
         padding: 0;
         flex-direction: column;
     }
-    .box5{
+
+    .box5 {
         padding: 50px;
     }
-    .box5 .b51{
+
+    .box5 .b51 {
         margin-left: -180px;
     }
-    .box5 .button{
+
+    .box5 .button {
 
         width: 300px;
 
     }
 
     /* section6 */
-    .box412{
+    .box412 {
         text-align: center;
         padding: 0 50px;
         gap: 10px;
         flex-direction: column;
     }
+
     .box412 .b12 {
         font-size: 0.8em;
     }
-    .box412 .b22{
+
+    .box412 .b22 {
         margin-top: 10px;
         margin-left: -400px;
     }
@@ -553,14 +640,14 @@ a:hover{
 
 
     /* last box  */
-      .box{
+    .box {
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
         align-items: center;
     }
-    
-    .box{
+
+    .box {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -571,12 +658,12 @@ a:hover{
 /* ipad resposive */
 
 @media (min-width: 760px) and (max-width: 900px) {
-    body{
+    body {
         overflow-x: hidden;
     }
 
     /* section1 */
-      .header #menu{
+    .header #menu {
         display: none;
         font-size: 2.6em;
         font-weight: 900;
@@ -584,45 +671,53 @@ a:hover{
         margin-right: -229px;
 
     }
+
     /* section3 */
-     .box3 {
+    .box3 {
         flex-direction: column;
         padding: 0 40px;
-     }
-     /* sedtion4  */
-     .box4{
+    }
+
+    /* sedtion4  */
+    .box4 {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-     /* sedtion5  */
-    .box51{
+    /* sedtion5  */
+    .box51 {
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .box5{
+
+    .box5 {
         padding: 0;
     }
-     .box5 .button{
-        
+
+    .box5 .button {
+
         width: 300px;
 
     }
-        .box5 .b51{
+
+    .box5 .b51 {
         margin-left: -90px;
     }
+
     /* section6 */
-   .box412{
+    .box412 {
         text-align: center;
         padding: 0 50px;
         gap: 10px;
         flex-direction: column;
     }
+
     .box412 .b12 {
         font-size: 1em;
     }
-    .box412 .b22{
+
+    .box412 .b22 {
         margin-top: 10px;
         margin-left: -230px;
     }
@@ -630,14 +725,14 @@ a:hover{
 
     /* last-box section */
 
-    .box{
+    .box {
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
         align-items: center;
     }
-    
-    .box{
+
+    .box {
         display: flex;
         flex-direction: column;
         justify-content: center;
