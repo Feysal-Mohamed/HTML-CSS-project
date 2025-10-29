@@ -204,6 +204,7 @@ a:hover{
    animation-timeline: view(90% auto);
 }
 .box42 .b22{
+    /* margin-left: 2000px; */
        animation: box312 1s  ;
    animation-timeline: view(70% auto); 
 }
@@ -263,7 +264,7 @@ a:hover{
 /* samsung responsive */
 @media (min-width: 0) and (max-width: 410px) {
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
      .nav {
         display: none;
@@ -331,7 +332,7 @@ a:hover{
     }
     .box412 .b22{
         margin-top: 10px;
-        margin-left: -480px;
+        margin-left: -360px;
     }
       .box{
         flex-wrap: wrap;
@@ -355,7 +356,7 @@ a:hover{
 
 @media (min-width: 410px) and (max-width: 600px) {
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .nav {
         display: none;
@@ -423,7 +424,7 @@ a:hover{
     }
     .box412 .b22{
         margin-top: 10px;
-        margin-left: -480px;
+        margin-left: -344px;
     }
       .box{
         flex-wrap: wrap;
@@ -447,7 +448,7 @@ a:hover{
 /* ipad responsive */
 @media (min-width: 760px) and (max-width: 900px) {
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     /* section1 */
@@ -486,8 +487,13 @@ a:hover{
     }
     .box412 .b22{
         margin-top: 10px;
-        margin-left: -660px;
+        margin-left: -460px;
     }
+    /* .box412{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } */
    
     /* last section  */
       .box{

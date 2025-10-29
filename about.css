@@ -295,7 +295,7 @@ a:hover{
 /* samsung responsive */
 @media (min-width: 0) and (max-width: 410px) {
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
      .nav {
         display: none;
@@ -349,6 +349,9 @@ a:hover{
     .box3{
         display: flex;
         padding: 0 20px;
+        
+        justify-items: center;
+
         flex-direction: column;
     }
     
@@ -435,7 +438,7 @@ a:hover{
 
 @media (min-width: 410px) and (max-width: 600px) {
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .nav {
         display: none;
@@ -569,7 +572,7 @@ a:hover{
 
 @media (min-width: 760px) and (max-width: 900px) {
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     /* section1 */
